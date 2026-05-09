@@ -54,7 +54,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            style={{ flex: '1 1 500px' }}
+            style={{ flex: '1 1 min(100%, 500px)' }}
           >
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
               Why Choose <span className="text-gold">Seth Realtors?</span>
@@ -83,7 +83,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             style={{ 
-              flex: '1 1 400px', 
+              flex: '1 1 min(100%, 400px)', 
               background: 'rgba(255,255,255,0.05)', 
               borderRadius: '20px', 
               padding: '40px',

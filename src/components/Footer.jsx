@@ -18,7 +18,7 @@ const Footer = () => {
           marginBottom: '30px'
         }}>
           
-          <div style={{ flex: '1 1 300px' }}>
+          <div style={{ flex: '1 1 min(100%, 300px)' }}>
             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.8rem', letterSpacing: '2px', color: 'var(--white)', marginBottom: '20px' }}>
               SETH REALTORS
             </h2>
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div style={{ flex: '1 1 200px' }}>
+          <div style={{ flex: '1 1 min(100%, 200px)' }}>
             <h4 style={{ fontSize: '1.2rem', marginBottom: '24px', color: 'var(--gold)' }}>Quick Links</h4>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <li><a href="#home" style={{ color: '#ccc', transition: 'color 0.3s' }} onMouseOver={(e)=>e.target.style.color='white'} onMouseOut={(e)=>e.target.style.color='#ccc'}>Home</a></li>
@@ -48,7 +48,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div style={{ flex: '1 1 200px' }}>
+          <div style={{ flex: '1 1 min(100%, 200px)' }}>
             <h4 style={{ fontSize: '1.2rem', marginBottom: '24px', color: 'var(--gold)' }}>Locations</h4>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <li style={{ color: '#ccc' }}>Sector 150, Noida</li>

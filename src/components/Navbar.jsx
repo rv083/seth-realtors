@@ -45,7 +45,7 @@ const Navbar = () => {
         }`}
         style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
       >
-        <div className="logo" style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.5rem', letterSpacing: '2px', color: '#fff', zIndex: 60 }}>
+        <div className="logo" style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: 'clamp(1.6rem, 6vw, 2rem)', letterSpacing: '1px', color: '#fff', zIndex: 60 }}>
           SETH REALTORS
         </div>
         

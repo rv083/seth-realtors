@@ -63,7 +63,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             style={{
-              flex: '1 1 350px',
+              flex: '1 1 min(100%, 350px)',
               background: 'var(--charcoal)',
               color: 'white',
               padding: '40px',
@@ -123,7 +123,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             style={{
-              flex: '2 1 500px',
+              flex: '2 1 min(100%, 500px)',
               background: 'white',
               padding: '40px',
               borderRadius: '16px',
@@ -132,24 +132,24 @@ const Contact = () => {
           >
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                <div style={{ flex: '1 1 200px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ flex: '1 1 min(100%, 200px)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <label htmlFor="name" style={{ fontWeight: 500 }}>Full Name</label>
-                  <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9' }} placeholder="John Doe" />
+                  <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9', width: '100%' }} placeholder="John Doe" />
                 </div>
-                <div style={{ flex: '1 1 200px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ flex: '1 1 min(100%, 200px)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <label htmlFor="phone" style={{ fontWeight: 500 }}>Phone Number</label>
-                  <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9' }} placeholder="+91 98765 43210" />
+                  <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9', width: '100%' }} placeholder="+91 98765 43210" />
                 </div>
               </div>
 
               <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                <div style={{ flex: '1 1 200px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ flex: '1 1 min(100%, 200px)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <label htmlFor="email" style={{ fontWeight: 500 }}>Email Address</label>
-                  <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9' }} placeholder="john@example.com" />
+                  <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9', width: '100%' }} placeholder="john@example.com" />
                 </div>
-                <div style={{ flex: '1 1 200px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ flex: '1 1 min(100%, 200px)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <label htmlFor="property" style={{ fontWeight: 500 }}>Property Interested In</label>
-                  <input type="text" id="property" name="property" value={formData.property} onChange={handleChange} style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9' }} placeholder="e.g. The Platinum Residence" />
+                  <input type="text" id="property" name="property" value={formData.property} onChange={handleChange} style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid #ddd', outline: 'none', background: '#f9f9f9', width: '100%' }} placeholder="e.g. The Platinum Residence" />
                 </div>
               </div>
 
